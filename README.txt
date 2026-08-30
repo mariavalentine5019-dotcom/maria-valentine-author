@@ -1,14 +1,16 @@
-MARIA VALENTINE AUTHOR WEBSITE — POLISHED AMAZON UPDATE
+MARIA VALENTINE — BRIGHT VISIBLE FIX
 
-This version includes:
-- Expanded About the Author biography
-- Expanded descriptions for all four books
-- "For the reader who..." callouts
-- Individual BUY ON AMAZON buttons for all four titles
-- Updated visual styling with blush, gold, cream, black, and wine accents
-- Stronger section separation, decorative details, and richer book cards
-- Enhanced The Message and Follow the Journey sections
-- Mobile responsive styling
-- The same Maria Valentine logo, social links, author identity, and four approved book covers
+This package forces the bright redesign directly in index.html so the old visual stylesheet cannot hide the changes.
 
-Upload the files in this folder to the root of the GitHub repository, replacing files with the same names.
+Preserved:
+- all four original book-cover files
+- all current website wording
+- all current Amazon/social links
+- no author/person photo
+
+Fixed:
+- bright rose / berry / burgundy / plum / sunset / gold visual direction
+- tighter section spacing and removal of oversized blank gaps
+- cache-busting stylesheet reference
+
+Upload the files to the repository root, replacing files with the same names.
