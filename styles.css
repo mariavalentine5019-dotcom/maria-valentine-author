@@ -395,3 +395,19 @@ footer p { margin: 6px 0; font-size: .82rem; }
   font-size: 1.1rem;
   font-weight: 700;
 }
+
+
+/* Real book covers */
+.book-cover-wrap {
+  min-height: 0;
+  padding: 0;
+  background: #111;
+  display: block;
+}
+.book-cover {
+  width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+}

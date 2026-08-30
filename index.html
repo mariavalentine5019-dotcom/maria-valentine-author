@@ -57,9 +57,7 @@
 
       <div class="book-grid">
         <article class="book-card">
-          <div class="book-art">
-            <span class="book-mark">MV</span>
-          </div>
+          <div class="book-art book-cover-wrap"><img class="book-cover" src="cover-i-survived.jpeg" alt="I Survived What Was Meant to Break Me book cover"></div>
           <div class="book-body">
             <h3>I Survived What Was Meant to Break Me</h3>
             <p>A deeply personal journey through pain, survival, healing, and the strength to keep going.</p>
@@ -68,9 +66,7 @@
         </article>
 
         <article class="book-card">
-          <div class="book-art">
-            <span class="book-mark">MV</span>
-          </div>
+          <div class="book-art book-cover-wrap"><img class="book-cover" src="cover-when-god-meets-you.jpeg" alt="When God Meets You in the Middle book cover"></div>
           <div class="book-body">
             <h3>When God Meets You in the Middle</h3>
             <p>A 30-day journey of faith, grace, healing, and trust for the moments when life feels unfinished.</p>
@@ -79,9 +75,7 @@
         </article>
 
         <article class="book-card">
-          <div class="book-art">
-            <span class="book-mark">MV</span>
-          </div>
+          <div class="book-art book-cover-wrap"><img class="book-cover" src="cover-365-days.jpg" alt="365 Days of Grace & Strength book cover"></div>
           <div class="book-body">
             <h3>365 Days of Grace &amp; Strength</h3>
             <p>Daily encouragement created to help readers keep choosing grace, courage, and inner strength.</p>
@@ -90,9 +84,7 @@
         </article>
 
         <article class="book-card">
-          <div class="book-art">
-            <span class="book-mark">MV</span>
-          </div>
+          <div class="book-art book-cover-wrap"><img class="book-cover" src="cover-power-in-peace.jpg" alt="There Is Power in Peace book cover"></div>
           <div class="book-body">
             <h3>There Is Power in Peace</h3>
             <p>A reflection on choosing peace, protecting your heart, and recognizing the strength found in stillness.</p>
@@ -116,10 +108,6 @@
             peace, questions and faith, heartbreak and hope. Through reflective writing,
             personal storytelling, and words of encouragement, Maria creates books intended
             to remind readers that healing can happen one page, one day, and one choice at a time.
-          </p>
-          <p>
-            Maria Valentine is a pen name. For now, the words — not the face behind them —
-            remain at the center of the journey.
           </p>
         </div>
         <div class="about-symbol" aria-hidden="true">
@@ -183,6 +171,24 @@
     <p class="footer-note">Faith • Healing • Hope • Self-Love</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+const menuButton = document.querySelector('.menu-btn');
+const nav = document.querySelector('.nav');
+
+menuButton?.addEventListener('click', () => {
+  const isOpen = nav.classList.toggle('open');
+  menuButton.setAttribute('aria-expanded', String(isOpen));
+});
+
+document.querySelectorAll('.nav a').forEach(link => {
+  link.addEventListener('click', () => {
+    nav.classList.remove('open');
+    menuButton?.setAttribute('aria-expanded', 'false');
+  });
+});
+
+document.getElementById('year').textContent = new Date().getFullYear();
+
+  </script>
 </body>
 </html>
