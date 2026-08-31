@@ -1,27 +1,22 @@
-MARIA VALENTINE AUTHOR WEBSITE
+MARIA VALENTINE AUTHOR WEBSITE — CORRECTED BRIGHT VERSION WITH AFFIRMATION CARDS
 
-Files:
-- index.html — main website
-- styles.css — design and responsive layout
-- script.js — mobile menu + current year
-- maria-valentine-logo.png — supplied author logo
+This package uses the updated bright Maria Valentine website as the base.
 
-To preview:
-Open index.html in a web browser.
+Preserved:
+- Approved bright berry / rose / gold website background and styling
+- All four uploaded book covers
+- Existing book descriptions and Amazon buttons
+- Existing About, Message, Reader Note, Contact, social links, logo, and footer
 
-Before launch:
-1. Replace placeholder book artwork with final book covers.
-2. Add retailer links for each book.
-3. Add social media links and/or newsletter signup.
-4. Add a contact email or form only if desired.
-5. Review all book descriptions and author wording.
+Added only:
+- Affirmation Cards navigation link
+- The Maria Valentine Affirmation Collection section
+- Five featured card fronts: #9, #11, #21, #41, #60
+- One shared locked Maria Valentine card back
+- Tap/click side-to-side flip in the SAME card space
+- Physical and digital collection coming-soon notices
 
-This site is designed as a master static version that can be hosted on GitHub Pages
-or used as the design/content blueprint for Wix or Google Sites.
-
-Added social links: Amazon Author Page, Facebook, Instagram. TikTok added.
-
-Final website update:
-- Removed public pen-name disclosure.
-- Embedded JavaScript in index.html so script.js is no longer required for deployment.
-- Replaced all four MV placeholder graphics with the actual book covers.
+IMPORTANT:
+Upload the CONTENTS of this folder to the GitHub repository root, replacing same-name website files.
+Do not upload the ZIP itself to GitHub Pages.
+Keep any existing CNAME file in the repository.
