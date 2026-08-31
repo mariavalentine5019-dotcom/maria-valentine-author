@@ -1,22 +1,17 @@
-MARIA VALENTINE AUTHOR WEBSITE — CORRECTED BRIGHT VERSION WITH AFFIRMATION CARDS
+MARIA VALENTINE AUTHOR WEBSITE — LUXE FINAL UPDATE
 
-This package uses the updated bright Maria Valentine website as the base.
+Includes:
+- Rich warm ivory, deep burgundy/wine, near-black and champagne-gold palette
+- Stronger premium editorial styling
+- Featured Book section
+- "Find the Book for the Season You're In" reader pathway
+- Revised, warmer descriptions for all four books
+- Individual Buy on Amazon buttons
+- Expanded About the Author section
+- Signature reader note
+- Richer branded footer
+- Cache-busted exact logo references
+- Mobile responsive layout
+- Existing approved covers, logo, social links and Maria Valentine branding
 
-Preserved:
-- Approved bright berry / rose / gold website background and styling
-- All four uploaded book covers
-- Existing book descriptions and Amazon buttons
-- Existing About, Message, Reader Note, Contact, social links, logo, and footer
-
-Added only:
-- Affirmation Cards navigation link
-- The Maria Valentine Affirmation Collection section
-- Five featured card fronts: #9, #11, #21, #41, #60
-- One shared locked Maria Valentine card back
-- Tap/click side-to-side flip in the SAME card space
-- Physical and digital collection coming-soon notices
-
-IMPORTANT:
-Upload the CONTENTS of this folder to the GitHub repository root, replacing same-name website files.
-Do not upload the ZIP itself to GitHub Pages.
-Keep any existing CNAME file in the repository.
+Upload all files in this folder to the repository root, replacing files with the same names.
