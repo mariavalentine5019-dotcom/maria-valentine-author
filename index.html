@@ -42,6 +42,7 @@ section,.section,.hero,.quote-band,.featured-section,.path-section,.books-sectio
       <nav class="nav" aria-label="Main navigation">
         <a href="#home">Home</a>
         <a href="#books">Books</a>
+        <a href="#affirmations">Affirmation Cards</a>
         <a href="#about">About</a>
         <a href="#message">The Message</a>
         <a href="#contact">Contact</a>
@@ -210,6 +211,84 @@ section,.section,.hero,.quote-band,.featured-section,.path-section,.books-sectio
       </div>
     </section>
 
+
+    <section class="affirmation-section" id="affirmations" aria-labelledby="affirmation-title">
+      <div class="affirmation-inner">
+        <span class="section-kicker affirmation-kicker">THE MARIA VALENTINE AFFIRMATION COLLECTION</span>
+        <h2 id="affirmation-title">Words to carry with you.</h2>
+        <div class="gold-rule" aria-hidden="true"><span>♡</span></div>
+        <p class="affirmation-intro">
+          A 60-card collection created for healing, self-love, peace, boundaries, faith,
+          strength, becoming, new beginnings, and encouragement.
+        </p>
+
+        <p class="affirmation-instruction">Choose a card, then tap it to flip.</p>
+
+        <div class="flip-grid" aria-label="Five featured affirmation cards">
+          <div class="flip-wrap">
+            <button class="flip-card" type="button" aria-pressed="false" aria-label="Featured affirmation card 9. Tap to flip.">
+              <span class="flip-card-inner">
+                <span class="flip-face flip-front"><img src="affirmation-assets/card-09-front.png" alt="Featured affirmation card 9 front"></span>
+                <span class="flip-face flip-back"><img src="affirmation-assets/locked-back.png" alt="Maria Valentine affirmation card back"></span>
+              </span>
+            </button>
+            <button class="flip-cue" type="button"><span class="flip-label">Tap to flip</span></button>
+          </div>
+
+          <div class="flip-wrap">
+            <button class="flip-card" type="button" aria-pressed="false" aria-label="Featured affirmation card 11. Tap to flip.">
+              <span class="flip-card-inner">
+                <span class="flip-face flip-front"><img src="affirmation-assets/card-11-front.png" alt="Featured affirmation card 11 front"></span>
+                <span class="flip-face flip-back"><img src="affirmation-assets/locked-back.png" alt="Maria Valentine affirmation card back"></span>
+              </span>
+            </button>
+            <button class="flip-cue" type="button"><span class="flip-label">Tap to flip</span></button>
+          </div>
+
+          <div class="flip-wrap">
+            <button class="flip-card" type="button" aria-pressed="false" aria-label="Featured affirmation card 21. Tap to flip.">
+              <span class="flip-card-inner">
+                <span class="flip-face flip-front"><img src="affirmation-assets/card-21-front.png" alt="Featured affirmation card 21 front"></span>
+                <span class="flip-face flip-back"><img src="affirmation-assets/locked-back.png" alt="Maria Valentine affirmation card back"></span>
+              </span>
+            </button>
+            <button class="flip-cue" type="button"><span class="flip-label">Tap to flip</span></button>
+          </div>
+
+          <div class="flip-wrap">
+            <button class="flip-card" type="button" aria-pressed="false" aria-label="Featured affirmation card 41. Tap to flip.">
+              <span class="flip-card-inner">
+                <span class="flip-face flip-front"><img src="affirmation-assets/card-41-front.png" alt="Featured affirmation card 41 front"></span>
+                <span class="flip-face flip-back"><img src="affirmation-assets/locked-back.png" alt="Maria Valentine affirmation card back"></span>
+              </span>
+            </button>
+            <button class="flip-cue" type="button"><span class="flip-label">Tap to flip</span></button>
+          </div>
+
+          <div class="flip-wrap">
+            <button class="flip-card" type="button" aria-pressed="false" aria-label="Featured affirmation card 60. Tap to flip.">
+              <span class="flip-card-inner">
+                <span class="flip-face flip-front"><img src="affirmation-assets/card-60-front.png" alt="Featured affirmation card 60 front"></span>
+                <span class="flip-face flip-back"><img src="affirmation-assets/locked-back.png" alt="Maria Valentine affirmation card back"></span>
+              </span>
+            </button>
+            <button class="flip-cue" type="button"><span class="flip-label">Tap to flip</span></button>
+          </div>
+        </div>
+
+        <div class="affirmation-options" aria-label="Affirmation collection editions">
+          <div class="affirmation-option">
+            <strong>Physical 60-Card Deck</strong>
+            <span>Coming to the Maria Valentine shop</span>
+          </div>
+          <div class="affirmation-option">
+            <strong>Digital Collection</strong>
+            <span>Printable edition coming soon</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="interlude" aria-label="Maria Valentine signature message">
       <div class="interlude-inner">
         <span class="interlude-symbol">♡</span>
@@ -355,6 +434,21 @@ document.querySelectorAll('.nav a').forEach(link => {
 });
 
 document.getElementById('year').textContent = new Date().getFullYear();
+
+document.querySelectorAll('.flip-wrap').forEach((wrap) => {
+  const card = wrap.querySelector('.flip-card');
+  const cue = wrap.querySelector('.flip-cue');
+  const label = wrap.querySelector('.flip-label');
+
+  const flipCard = () => {
+    const flipped = card.classList.toggle('is-flipped');
+    card.setAttribute('aria-pressed', String(flipped));
+    label.textContent = flipped ? 'Tap to flip back' : 'Tap to flip';
+  };
+
+  card?.addEventListener('click', flipCard);
+  cue?.addEventListener('click', flipCard);
+});
   </script>
 </body>
 </html>

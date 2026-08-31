@@ -997,3 +997,159 @@ footer {
   .path-grid { grid-template-columns:1fr; }
   .path-card { min-height:175px; }
 }
+
+
+/* ===== Maria Valentine Affirmation Collection — added to the approved bright website ===== */
+.affirmation-section {
+  margin: 0;
+  padding: 62px max(20px, calc((100vw - 1180px) / 2));
+  text-align: center;
+  background:
+    radial-gradient(circle at 12% 15%, rgba(241,207,114,.20), transparent 22%),
+    radial-gradient(circle at 88% 20%, rgba(246,125,165,.24), transparent 25%),
+    linear-gradient(135deg, #210b18 0%, #5c1238 45%, #a91957 72%, #e74f83 100%);
+  border-top: 1px solid rgba(241,207,114,.45);
+  border-bottom: 1px solid rgba(241,207,114,.45);
+}
+.affirmation-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+.affirmation-kicker {
+  color: #ffe5a5 !important;
+}
+.affirmation-section h2 {
+  margin: 12px 0 10px;
+  color: #fff9f2;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(2.8rem, 5vw, 4.7rem);
+  line-height: 1.02;
+}
+.affirmation-section .gold-rule {
+  color: #ffd0df;
+}
+.affirmation-intro {
+  max-width: 790px;
+  margin: 0 auto;
+  color: #fff0eb;
+  font-size: 1rem;
+}
+.affirmation-instruction {
+  margin: 22px auto 28px;
+  color: #ffe5a5;
+  font-weight: 700;
+  letter-spacing: .06em;
+}
+.flip-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 20px;
+  align-items: start;
+}
+.flip-wrap {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.flip-card {
+  width: 100%;
+  aspect-ratio: 3.5 / 5;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  perspective: 1400px;
+  cursor: pointer;
+}
+.flip-card-inner {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform .72s cubic-bezier(.2,.7,.2,1);
+}
+.flip-card.is-flipped .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-face {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  border-radius: 18px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  box-shadow: 0 20px 45px rgba(0,0,0,.38);
+}
+.flip-face img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.flip-back {
+  transform: rotateY(180deg);
+}
+.flip-cue {
+  min-height: 42px;
+  padding: 9px 16px;
+  border: 1px solid rgba(241,207,114,.8);
+  border-radius: 999px;
+  background: rgba(35,8,24,.82);
+  color: #ffe5a5;
+  font: inherit;
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .05em;
+  cursor: pointer;
+  box-shadow: 0 10px 24px rgba(25,4,16,.18);
+}
+.flip-cue:hover,
+.flip-cue:focus-visible {
+  background: rgba(76,13,46,.96);
+}
+.flip-card:focus-visible,
+.flip-cue:focus-visible {
+  outline: 3px solid #f1cf72;
+  outline-offset: 3px;
+}
+.affirmation-options {
+  margin-top: 38px;
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.affirmation-option {
+  min-width: min(320px, 100%);
+  padding: 17px 22px;
+  border: 1px solid rgba(241,207,114,.72);
+  border-radius: 18px;
+  background: rgba(24,6,17,.62);
+  color: #fff8ef;
+  box-shadow: 0 16px 36px rgba(30,4,18,.16);
+}
+.affirmation-option strong,
+.affirmation-option span {
+  display: block;
+}
+.affirmation-option strong {
+  color: #ffe5a5;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.35rem;
+}
+.affirmation-option span {
+  margin-top: 2px;
+  color: #fff0eb;
+  font-size: .82rem;
+}
+
+@media (max-width: 980px) {
+  .flip-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 620px) {
+  .affirmation-section { padding: 48px 16px; }
+  .flip-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+  .flip-wrap:last-child { grid-column: 1 / -1; width: calc(50% - 8px); justify-self: center; }
+}
