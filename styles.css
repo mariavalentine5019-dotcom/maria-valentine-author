@@ -1046,16 +1046,18 @@ footer {
   gap: 20px;
   align-items: start;
 }
+
 .flip-wrap {
   min-width: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 12px;
+  height: 100%;
 }
 .flip-card {
   width: 100%;
-  aspect-ratio: 3.5 / 5;
+  aspect-ratio: 5 / 7;
   border: 0;
   padding: 0;
   background: transparent;
@@ -1153,3 +1155,9 @@ footer {
   .flip-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
   .flip-wrap:last-child { grid-column: 1 / -1; width: calc(50% - 8px); justify-self: center; }
 }
+
+/* 2026-08-31 card-row alignment correction: layout only */
+.flip-grid { align-items: stretch; }
+.flip-wrap { display: grid; grid-template-rows: auto 42px; align-content: start; gap: 12px; }
+.flip-card { display: block; width: 100%; aspect-ratio: 5 / 7; }
+.flip-cue { justify-self: center; align-self: start; margin: 0; }
