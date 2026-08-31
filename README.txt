@@ -1,17 +1,27 @@
-MARIA VALENTINE AUTHOR WEBSITE — LUXE FINAL UPDATE
+MARIA VALENTINE AUTHOR WEBSITE
 
-Includes:
-- Rich warm ivory, deep burgundy/wine, near-black and champagne-gold palette
-- Stronger premium editorial styling
-- Featured Book section
-- "Find the Book for the Season You're In" reader pathway
-- Revised, warmer descriptions for all four books
-- Individual Buy on Amazon buttons
-- Expanded About the Author section
-- Signature reader note
-- Richer branded footer
-- Cache-busted exact logo references
-- Mobile responsive layout
-- Existing approved covers, logo, social links and Maria Valentine branding
+Files:
+- index.html — main website
+- styles.css — design and responsive layout
+- script.js — mobile menu + current year
+- maria-valentine-logo.png — supplied author logo
 
-Upload all files in this folder to the repository root, replacing files with the same names.
+To preview:
+Open index.html in a web browser.
+
+Before launch:
+1. Replace placeholder book artwork with final book covers.
+2. Add retailer links for each book.
+3. Add social media links and/or newsletter signup.
+4. Add a contact email or form only if desired.
+5. Review all book descriptions and author wording.
+
+This site is designed as a master static version that can be hosted on GitHub Pages
+or used as the design/content blueprint for Wix or Google Sites.
+
+Added social links: Amazon Author Page, Facebook, Instagram. TikTok added.
+
+Final website update:
+- Removed public pen-name disclosure.
+- Embedded JavaScript in index.html so script.js is no longer required for deployment.
+- Replaced all four MV placeholder graphics with the actual book covers.
